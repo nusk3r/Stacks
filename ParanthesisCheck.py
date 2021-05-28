@@ -53,12 +53,10 @@ def paranthesisCheck(e):
     #If the expression is checked and stack is empty, it is balanced        
     if S.isEmpty() is True:
         return True
-        
-        
 exp = input()
 #exp = '[{()}]'
-if paranthesisCheck(exp) is True:
-    print('Balanced')
-else:
-    print('Unbalanced')
-
+for tst in exp:
+    if paranthesisCheck(tst) is True:
+        print('YES')
+    else:
+        print('NO')
